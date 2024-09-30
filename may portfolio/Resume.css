@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    font-family: "Josefin Sans", sans-serif;
+}
+body{
+    background-color:#212529;
+}
+                         /* navbar */
+.nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 7vh;
+    align-items: center;
+}
+.nav-list{
+  padding: 3vh;
+  border: .1px solid rgba(255, 255, 255, 0.178);
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.041);
+  position: fixed;
+  top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+  height: 30px;
+  align-items: center;
+}
+.nav-list li i{
+    color: #759ea0;
+    font-size: 3vh;
+}
+.nav-list li i:hover{
+    color: #00ffe5;
+    cursor: pointer;
+    font-size: 4vh;
+}
+.tooltip{
+    position: absolute;
+    top:-35px;
+    margin-left: -16px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #00ffe5c5;
+    padding: 0.7vh;
+    border-radius:1.5vh;
+    visibility: hidden;
+    
+}
+.nav-list li:hover .tooltip{
+    visibility: visible;
+}
+/* resume containoe */
+.resume-cards{
+    margin-top: 80px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+}
+/* img */
+/* From Uiverse.io by bhaveshxrawat */ 
+.car {
+    width: 200px;
+    height: 200px;
+    background: #05122498;
+    position: relative;
+    display: flex;
+    margin-top: -70px;
+    place-content: center;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  
+  .car::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+    height: 130%;
+    animation: rotBGimg 3s linear infinite;
+    transition: all 0.2s linear;
+  }
+  
+  @keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .car::after {
+    content: '';
+    position: absolute;
+    background: #051e3b;
+    background-image: url(img/01.png);
+    background-size: cover;
+    inset: 5px;
+    border-radius:50%;
+  }  
+ /* cards */
+.card {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: #535353;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 2px rgba(0, 255, 255, 0.795);
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+ .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  }
+  
+  .card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: #00f3f3e3;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card:hover .card__content {
+    transform: rotateX(0deg);
+  }
+  
+  .card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .card:hover svg {
+    scale: 0;
+  }
+  

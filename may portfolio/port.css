@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    font-family: "Josefin Sans", sans-serif;
+}
+body{
+    background-color:#212529;
+}
+                         /* navbar */
+.nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 7vh;
+    align-items: center;
+}
+.nav-list{
+  padding: 3vh;
+  border: .1px solid rgba(255, 255, 255, 0.178);
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.041);
+  position: fixed;
+  top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+  height: 30px;
+  align-items: center;
+}
+.nav-list li i{
+    color: #759ea0;
+    font-size: 3vh;
+}
+.nav-list li i:hover{
+    color: #00ffe5;
+    cursor: pointer;
+    font-size: 4vh;
+}
+.tooltip{
+    position: absolute;
+    top:-35px;
+    margin-left: -16px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #00ffe5c5;
+    padding: 0.7vh;
+    border-radius:1.5vh;
+    visibility: hidden;
+    
+}
+.nav-list li:hover .tooltip{
+    visibility: visible;
+}
+/* img section */
+.img-te{
+  height: 400px;
+  width: 100%;
+}
+.infor-tem{
+  height: 250px;
+  width: 40%;
+  align-items: center;
+}
+ 
+.main {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5em;
+    margin-right: 80px;
+  }
+  
+  .up {
+    display: flex;
+    flex-direction: row;
+    gap: 2.3em;
+  }
+  
+  .down {
+    display: flex;
+    flex-direction: row;
+    gap: 2.3em;
+  }
+  
+  .card1 {
+    width: 180px;
+    height: 180px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 90px 90px 90px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+    background-image: url(img/aaru.jpg);
+    background-size: cover;
+  }
+
+  
+  .card2 {
+    width: 180px;
+    height: 180px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 90px 90px 90px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+    background-image: url(img/raj1.jpg);
+    background-size: cover;
+  }
+  .card3 {
+    margin-left: 20px;
+    width: 180px;
+    height: 180px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 90px 90px 90px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+    background-image: url(img/radhe.jpg);
+    background-size: cover;
+  }
+  
+  
+  .card4 {
+    width: 180px;
+    height: 180px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 90px 90px 90px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+    background-image: url(img/raju.jpg);
+    background-size: cover;
+  }
+
+  
+  .card1:hover {
+    cursor: pointer;
+    scale: 1.1;
+   
+  }
+  
+  .card1:hover .instagram {
+    fill: white;
+  }
+  
+  .card2:hover {
+    cursor: pointer;
+    scale: 1.1;
+   
+  }
+  
+  .card2:hover .twitter {
+    fill: white;
+  }
+  
+  .card3:hover {
+    cursor: pointer;
+    scale: 1.1;
+   
+  }
+  
+  .card3:hover .github {
+    fill: white;
+  }
+  
+  .card4:hover {
+    cursor: pointer;
+    scale: 1.1;
+ 
+  }
+  
+  .card4:hover .discord {
+    fill: white;
+  }
+  /* name toulteep */
+  .name{
+    position: absolute;
+    top:-35px;
+    height: 30px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #ffffff46;
+    padding:1vh;
+    border-radius:1.5vh;
+    visibility: hidden;
+    border-radius: 90px 90px 90px 5px;
+}
+
+.main span,:hover .name{
+  visibility: visible;
+}
